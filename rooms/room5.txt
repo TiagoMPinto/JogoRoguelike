@@ -1,0 +1,13 @@
+#
+# 0 D room3.txt 2
+#
+WWWWWWWWWW
+WWWp   k W
+WW       W
+WW  G    W
+W     S  W
+W  S   WWW
+W       WW
+W S      W
+W        W
+WWWWWW0WWW

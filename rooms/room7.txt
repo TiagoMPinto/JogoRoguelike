@@ -1,0 +1,13 @@
+#
+# 0 D room0.txt 3
+#
+ggggggggWW
+ggggggggWW
+ggggggggWW
+ggggggggWW
+ggggggggWW
+gggggggeWW
+ggggggggg0
+gggggggeWW
+ggggggggWW
+ggggggggWW

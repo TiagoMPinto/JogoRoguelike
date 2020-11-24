@@ -1,0 +1,16 @@
+#
+# 0 D room2.txt 0 k
+# 1 D room1.txt 0
+# 2 D room0.txt 2
+# 3 D room7.txt 0 ks
+#
+WW0WWWWWWW
+W        W
+W  B     1
+W        W
+W     B  W
+WWWWW    W
+3  hW    W
+W   2    W
+W   W    W
+WWWWWWWWWW
