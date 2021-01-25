@@ -29,5 +29,6 @@ public class Bat extends Enemy {
 
     @Override
     public void update(Observable o, Object arg) {
+        throw new UnsupportedOperationException();
     }
 }

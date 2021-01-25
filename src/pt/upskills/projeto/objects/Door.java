@@ -1,6 +1,5 @@
 package pt.upskills.projeto.objects;
 
-import org.omg.CORBA.WCharSeqHelper;
 import pt.upskills.projeto.gui.ImageTile;
 import pt.upskills.projeto.rogue.utils.Position;
 
@@ -88,7 +87,7 @@ public class Door implements ImageTile {
     public String getName() {
         if(tipo.equals("E")){
             return "DoorWay";
-        }if(tipo.equals("D") && closed){
+        }else if(tipo.equals("D") && closed){
             return "DoorClosed";
         }else{
             return "DoorOpen";

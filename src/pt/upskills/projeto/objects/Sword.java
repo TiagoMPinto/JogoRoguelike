@@ -2,7 +2,6 @@ package pt.upskills.projeto.objects;
 
 import pt.upskills.projeto.rogue.utils.Position;
 
-import java.util.Observable;
 
 public class Sword extends Item{
 

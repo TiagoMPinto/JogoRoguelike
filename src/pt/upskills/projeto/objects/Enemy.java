@@ -1,6 +1,5 @@
 package pt.upskills.projeto.objects;
 
-import javafx.geometry.Pos;
 import pt.upskills.projeto.game.Engine;
 import pt.upskills.projeto.gui.ImageTile;
 import pt.upskills.projeto.rogue.utils.Position;
@@ -72,7 +71,6 @@ public abstract class Enemy implements ImageTile, Observer {
         int r= rand.nextInt(4);
         if(r==2) {
             Food food = new Food(getPosition());
-            System.out.println(getPosition());
             Engine.currentRoom.getTiles().add(food);
             Engine.currentRoom.getListItems().add(food);
             Engine.gui.addImage(food);
@@ -82,11 +80,9 @@ public abstract class Enemy implements ImageTile, Observer {
     public boolean canMove(Position position){//para nao andar nas paredes
          boolean possivel=true;
          for(ImageTile tile: Engine.currentRoom.getTiles()) {
-             if (tile.getPosition().equals(position)) {
-                 if (!(tile instanceof Floor)) {
-                     possivel = false;
-                     break;
-                 }
+             if (tile.getPosition().equals(position) && !(tile instanceof Floor)) {
+                 possivel = false;
+                 break;
              }
          }
          return possivel;
@@ -146,7 +142,6 @@ public abstract class Enemy implements ImageTile, Observer {
 
     public void fightHero(Hero hero){
         hero.setLife(hero.getLife()-getStrength());
-        System.out.println("Levaste dano!"+hero.getLife());
     }
 
     public void setPosition(Position position) {

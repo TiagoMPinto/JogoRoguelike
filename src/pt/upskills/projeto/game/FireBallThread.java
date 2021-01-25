@@ -36,7 +36,6 @@ public class FireBallThread extends Thread {
                 e.printStackTrace();
             }
         }
-        // Remove FireBall of {ImageMatrixGUI}
         ImageMatrixGUI.getInstance().removeImage(fireTile);
     }
 }

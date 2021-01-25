@@ -3,7 +3,6 @@ package pt.upskills.projeto.objects;
 import pt.upskills.projeto.gui.ImageTile;
 import pt.upskills.projeto.rogue.utils.Position;
 
-import java.util.Observer;
 
 public abstract class Item implements ImageTile {
     private Position position;

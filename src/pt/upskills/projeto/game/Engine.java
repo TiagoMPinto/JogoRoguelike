@@ -183,6 +183,7 @@ public class Engine {
                                     listEnemys.add(thief);
                                     listaObservaveis.add(thief);
                                     break;
+                                default:break;
                             }
                             for (Door door : listDoors) {
                                 if ((caracteres[i]).equals(String.valueOf(door.getPortaEntrada()))) {

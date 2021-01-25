@@ -1,7 +1,6 @@
 package pt.upskills.projeto.objects;
 
-import pt.upskills.projeto.game.Engine;
-import pt.upskills.projeto.gui.ImageTile;
+
 import pt.upskills.projeto.rogue.utils.Position;
 import pt.upskills.projeto.rogue.utils.Vector2D;
 

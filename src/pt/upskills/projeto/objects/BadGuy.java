@@ -28,6 +28,6 @@ public class BadGuy extends Enemy {
 
     @Override
     public void update(Observable o, Object arg) {
-
+        throw new UnsupportedOperationException();
     }
 }

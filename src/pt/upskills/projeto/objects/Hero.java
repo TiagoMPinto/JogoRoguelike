@@ -303,7 +303,7 @@ public class Hero implements ImageTile, Observer {
         return null;
     }
 
-    public void enterDoor(Hero hero,Door door){
+    public void enterDoor(Door door){
         Engine.changeRoom(this,door.getNivel());
         for(Door nextDoor:Engine.currentRoom.getListDoors()){
             if(nextDoor.getPortaEntrada()== door.getPortaSaida()){
@@ -381,8 +381,6 @@ public class Hero implements ImageTile, Observer {
                 Enemy enemy = (Enemy) tile;
                 fightEnemy(enemy);
                 updateLifeBar();
-                System.out.println("Deste DANO! " + enemy.getLife());
-                System.out.println("Levaste DANO! " + getLife());
                 if (!enemy.isAlive()) {
                     if(enemy.getName().equals("Skeleton")){
                         enemy.dropItem();
@@ -423,17 +421,14 @@ public class Hero implements ImageTile, Observer {
         }
 
         if(possivel){
-            //updatePoints((-1));
             position=novaPosicao;
-            //acoes depois do passo
             for(Door door:Engine.currentRoom.getListDoors()){
                 if(door.getPosition().equals(novaPosicao)){
-                    enterDoor(this, door);
+                    enterDoor(door);
                     break;
                 }
             }
 
-            //List<Enemy> enemies= new ArrayList(Engine.currentRoom.getListEnemys());
 
             for(Enemy enemy: Engine.currentRoom.getListEnemys()) {
                 if (enemy.isClose(Engine.hero)) {
@@ -493,7 +488,6 @@ public class Hero implements ImageTile, Observer {
             }catch (IOException e){
                 e.printStackTrace();
             }
-            //System.out.println("Pontos:"+getPontos());
         }
         if(!isAlive()){
             System.out.println("You died. Try Again!");

@@ -1,10 +1,7 @@
 package pt.upskills.projeto.objects;
 
 import pt.upskills.projeto.gui.ImageTile;
-import pt.upskills.projeto.rogue.utils.Position;
 
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Observer;

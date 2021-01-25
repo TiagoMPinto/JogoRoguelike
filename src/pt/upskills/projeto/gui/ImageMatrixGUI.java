@@ -334,6 +334,7 @@ public class ImageMatrixGUI extends Observable {
 				while (true)
 					waitForKey();
 			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
 		}
 	}

@@ -70,8 +70,6 @@ public class GameStatus {
 
 
     public static void loadGame(){
-        //Engine.rooms.clear();
-        //Engine.hero= new Hero(new Position(0,0));
         List<Room> roomsLoad= new ArrayList<>();
         int currentNivel = 0;
         int xHero=0;
@@ -280,13 +278,7 @@ public class GameStatus {
             e.printStackTrace();
         }
         Engine.gui.clearImages();
-        //Engine.rooms.clear();
         Engine.rooms=new ArrayList(roomsLoad);
-        //Engine.hero.setPosition(new Position(xHero, yHero));
         Engine.changeRoom(Engine.hero, currentNivel);
-
-
-
-
     }
 }
